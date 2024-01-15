@@ -14,7 +14,7 @@ class Image:
         self.real = np.real(self.dft)
         self.imaginary = np.imag(self.dft)
         self.magnitude = np.abs(self.dft)
-        self.phase = np.angle(np.fft.fftshift(self.dft))
+        self.phase = np.angle(self.dft)
 
 
 def load_image_from_file_name(file_name: str) -> Image:
